@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Mock Metadata System</title>
+  <style>
+    body { font-family: sans-serif; max-width: 720px; margin: 40px auto; }
+    label { display: block; margin: 14px 0; }
+    input { width: 100%; padding: 8px; box-sizing: border-box; }
+    button { padding: 9px 18px; }
+    #message { margin-top: 16px; }
+  </style>
+</head>
+<body>
+  <h1>Mock Metadata System</h1>
+  <label>Paper ID <input id="paper_id" value="PAPER002" readonly></label>
+  <label>Title <input id="title" value="Synthetic Materials Study"></label>
+  <label>OA <input id="oa" value=""></label>
+  <label>Project Number <input id="project_number" value="PRJ-002"></label>
+  <button id="save" type="button">Save</button>
+  <div id="message"></div>
+
+  <script>
+    window.savedRecord = {};
+    document.querySelector('#save').addEventListener('click', () => {
+      window.savedRecord = {
+        title: document.querySelector('#title').value,
+        oa: document.querySelector('#oa').value,
+        project_number: document.querySelector('#project_number').value
+      };
+      document.querySelector('#message').textContent = 'Saved';
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Research Metadata Extraction Payload",
+  "type": "object",
+  "required": [
+    "papers"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "papers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "paper_id",
+          "title",
+          "journal",
+          "open_access",
+          "project_numbers",
+          "authors"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "paper_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "title": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "journal": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "open_access": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "enum": [
+              "Y",
+              "N",
+              null
+            ]
+          },
+          "project_numbers": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true
+          },
+          "authors": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "name",
+                "role",
+                "affiliations"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "role": {
+                  "type": "string",
+                  "enum": [
+                    "first",
+                    "corresponding",
+                    "coauthor",
+                    "unknown"
+                  ]
+                },
+                "affiliations": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "provenance": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "source_hash",
+              "source_type",
+              "source_locator",
+              "persistence_policy"
+            ],
+            "properties": {
+              "source_hash": {
+                "type": "string",
+                "minLength": 16
+              },
+              "source_type": {
+                "type": "string",
+                "minLength": 1
+              },
+              "source_locator": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "section",
+                  "page"
+                ],
+                "properties": {
+                  "section": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "page": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ],
+                    "minimum": 1
+                  }
+                }
+              },
+              "persistence_policy": {
+                "const": "derived_metadata_only"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

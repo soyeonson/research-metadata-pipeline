@@ -1,0 +1,40 @@
+version: 1.0
+
+principles:
+  source_content_persistence: false
+  persist_derived_metadata_only: true
+  llm_output_requires_schema_validation: true
+  human_review_for_undetermined: true
+  evidence_text_persistence: false
+
+open_access:
+  master_allowed_values:
+    - Y
+    - null
+  blank_means: missing_input
+  source_y_master_blank: MISSING_IN_MASTER
+  source_n_master_y: REVIEW
+
+project_number:
+  comparison: normalized_set
+  normalize_unicode_dashes: true
+  remove_internal_spaces: true
+  strip_prefixes:
+    - NRF
+    - NSF
+    - DFG
+    - NIH
+    - MSIT
+    - IITP
+    - KEIT
+
+affiliation:
+  comparison: normalized_set
+  use_authority_table: true
+  free_translation: false
+
+author:
+  compare_count_as_quality_signal: true
+  identity_matching:
+    fuzzy_match: false
+    note: 'Author-level identity matching is intentionally out of scope for the public sample.'

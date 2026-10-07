@@ -1,0 +1,53 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Secrets and environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Databases and runtime state
+*.db
+*.sqlite
+*.sqlite3
+resume_state.json
+write_journal.jsonl
+
+# Private/runtime data
+data/raw/
+data/private/
+output/
+outputs/
+logs/
+downloads/
+quarantine/
+
+# Browser profiles / auth
+browser_profile/
+playwright/.auth/
+
+# Source content: do not commit by default
+*.pdf
+*.xml
+*.html
+*.htm
+*.txt
+
+# Explicitly allow the synthetic public fixture
+!samples/synthetic_article.txt
+!automation/demo_site/article_form.html
+
+# Excel temporary files
+~$*.xlsx
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

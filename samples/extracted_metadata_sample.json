@@ -1,0 +1,133 @@
+{
+  "papers": [
+    {
+      "paper_id": "PAPER001",
+      "title": "Sample Article on Catalysis",
+      "journal": "Journal of Example Research",
+      "open_access": "Y",
+      "project_numbers": [
+        "NRF-2026-R1A1-001"
+      ],
+      "authors": [
+        {
+          "name": "Kim A",
+          "role": "first",
+          "affiliations": [
+            "Research Institute A"
+          ]
+        },
+        {
+          "name": "Lee B",
+          "role": "corresponding",
+          "affiliations": [
+            "University B"
+          ]
+        }
+      ],
+      "provenance": {
+        "source_hash": "209926216f2a4c5417e66f7654ca281757779ac0822ed2ec601d29e792c71342",
+        "source_type": "synthetic_metadata_fixture",
+        "source_locator": {
+          "section": null,
+          "page": null
+        },
+        "persistence_policy": "derived_metadata_only"
+      }
+    },
+    {
+      "paper_id": "PAPER002",
+      "title": "Synthetic Materials Study",
+      "journal": "Open Materials Letters",
+      "open_access": "Y",
+      "project_numbers": [
+        "PRJ-002"
+      ],
+      "authors": [
+        {
+          "name": "Park C",
+          "role": "first",
+          "affiliations": [
+            "Example Tech University"
+          ]
+        }
+      ],
+      "provenance": {
+        "source_hash": "9f151022b96b98d03bf6421f2458f6d3dcb441e7cdf07aaefc42fe0af4f84a8d",
+        "source_type": "synthetic_metadata_fixture",
+        "source_locator": {
+          "section": null,
+          "page": null
+        },
+        "persistence_policy": "derived_metadata_only"
+      }
+    },
+    {
+      "paper_id": "PAPER003",
+      "title": "Data Integrity in Research Systems",
+      "journal": "Metadata Practice",
+      "open_access": null,
+      "project_numbers": [
+        "PRJ-999"
+      ],
+      "authors": [
+        {
+          "name": "Choi D",
+          "role": "corresponding",
+          "affiliations": [
+            "Research Institute A"
+          ]
+        },
+        {
+          "name": "Han E",
+          "role": "coauthor",
+          "affiliations": [
+            "Research Institute A"
+          ]
+        }
+      ],
+      "provenance": {
+        "source_hash": "c448b8eb405524feab8aa34659d04c09fe67677274f1f922ec55a2753e5d8cc2",
+        "source_type": "synthetic_metadata_fixture",
+        "source_locator": {
+          "section": null,
+          "page": null
+        },
+        "persistence_policy": "derived_metadata_only"
+      }
+    },
+    {
+      "paper_id": "PAPER004",
+      "title": "Automated Metadata Quality Control",
+      "journal": "Information Systems Demo",
+      "open_access": "N",
+      "project_numbers": [
+        "MSIT - DEMO-004"
+      ],
+      "authors": [
+        {
+          "name": "Jung F",
+          "role": "first",
+          "affiliations": [
+            "Institute C"
+          ]
+        },
+        {
+          "name": "Seo G",
+          "role": "corresponding",
+          "affiliations": [
+            "University D"
+          ]
+        }
+      ],
+      "provenance": {
+        "source_hash": "05e28049b12f13596fe5d4cd62ccbacab9f9eeb53f24d048be8432d49d59f674",
+        "source_type": "synthetic_metadata_fixture",
+        "source_locator": {
+          "section": null,
+          "page": null
+        },
+        "persistence_policy": "derived_metadata_only"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+"""Transient document-processing examples."""

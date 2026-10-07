@@ -1,0 +1,16 @@
+SYNTHETIC ARTICLE FIXTURE — NOT A PUBLISHED ARTICLE
+
+Title: Synthetic Study of Metadata Validation Workflows
+Journal: Journal of Demonstration Metadata
+
+Authors
+Alice Kim — Research Institute A — First author
+Bob Lee — University B — Corresponding author
+
+Open Access
+This synthetic example is marked as Open Access for testing purposes only.
+
+Acknowledgements
+This synthetic work was supported by demonstration project DEMO-2026-001.
+
+End of synthetic fixture.
